@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Jiochat.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error validation test(failed)">
+    <classes>
+      <class name="Jiochat.tests.ErrorValidations">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="LogInErrorvalidtion"/>
+          <include name="teadDown"/>
+        </methods>
+      </class> <!-- Jiochat.tests.ErrorValidations -->
+    </classes>
+  </test> <!-- Error validation test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

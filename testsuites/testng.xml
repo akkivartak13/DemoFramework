@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+
+<listeners>
+		<listener class-name="Jiochat.TestComponents.Listeners"></listener>
+	</listeners>
+	
+ <test thread-count="5" name="Submit order test">
+    <classes>
+         <class name="Jiochat.tests.SubmitOrderTest"/>
+    </classes>
+  </test>
+  
+   <test thread-count="5" name="Error validation test">
+    <classes>
+      <class name="Jiochat.tests.ErrorValidations"/>
+     
+    </classes>
+  </test>
+</suite> <!-- Suite -->
